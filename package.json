@@ -1,0 +1,12 @@
+{
+  "name": "margin-and-spine-website",
+  "version": "1.0.0",
+  "description": "Official website for Margin & Spine — a boutique authority book studio. Static HTML/CSS/JS, no build step.",
+  "private": true,
+  "scripts": {
+    "start": "npx serve .",
+    "preview": "npx serve ."
+  },
+  "author": "Ubaid Ur Rahman",
+  "license": "UNLICENSED"
+}

@@ -1,0 +1,6 @@
+# Margin & Spine — allow all crawlers
+User-agent: *
+Allow: /
+
+# TODO: replace with your real domain
+Sitemap: https://www.YOURDOMAIN.com/sitemap.xml
