@@ -3,7 +3,7 @@
    Lightweight vanilla JS, no libraries.
    Handles: header/scroll progress, scrollspy nav, mobile menu,
    scroll reveals, animated counters, hero book tilt,
-   journey tabs, before/after toggle, inquiry form.
+   and the inquiry form.
    ===================================================================== */
 
 (function(){
@@ -87,48 +87,6 @@
       book.style.transform = 'rotateX(' + (7 - dy*9) + 'deg) rotateY(' + (-30 + dx*14) + 'deg)';
     });
     stage.addEventListener('pointerleave', function(){ book.style.transform = 'rotateX(7deg) rotateY(-30deg)'; });
-  }
-
-  /* ---- journey tabs ---- */
-  var jTabs = Array.prototype.slice.call(document.querySelectorAll('.j-tab'));
-  var jPanels = Array.prototype.slice.call(document.querySelectorAll('.j-panel'));
-  function selectTab(tab){
-    jTabs.forEach(function(t){ t.setAttribute('aria-selected', String(t === tab)); });
-    jPanels.forEach(function(p){
-      var on = p.id === tab.getAttribute('aria-controls');
-      p.classList.toggle('active', on);
-      if(on){ p.removeAttribute('hidden'); }else{ p.setAttribute('hidden',''); }
-    });
-  }
-  jTabs.forEach(function(tab, idx){
-    tab.addEventListener('click', function(){ selectTab(tab); });
-    tab.addEventListener('keydown', function(e){
-      var dir = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
-      if(dir){ e.preventDefault(); var next = jTabs[(idx + dir + jTabs.length) % jTabs.length]; next.focus(); selectTab(next); }
-    });
-  });
-  /* gentle auto-advance until the visitor interacts */
-  var jAuto = null, jIdx = 0;
-  if(jTabs.length && !reduceMotion){
-    jAuto = setInterval(function(){
-      jIdx = (jIdx + 1) % jTabs.length; selectTab(jTabs[jIdx]);
-    }, 5200);
-    var stopAuto = function(){ if(jAuto){ clearInterval(jAuto); jAuto = null; } };
-    jTabs.forEach(function(t){ t.addEventListener('click', stopAuto); t.addEventListener('focus', stopAuto); });
-  }
-
-  /* ---- before / after toggle ---- */
-  var baStage = document.getElementById('baStage'), baB = document.getElementById('baBefore'), baA = document.getElementById('baAfter');
-  function setBA(after){
-    if(!baStage) return;
-    baStage.classList.toggle('show-after', after);
-    baStage.classList.toggle('show-before', !after);
-    baA.setAttribute('aria-pressed', String(after));
-    baB.setAttribute('aria-pressed', String(!after));
-  }
-  if(baB && baA){
-    baB.addEventListener('click', function(){ setBA(false); });
-    baA.addEventListener('click', function(){ setBA(true); });
   }
 
   /* ---- inquiry form ----

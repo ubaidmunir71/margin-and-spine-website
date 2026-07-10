@@ -123,11 +123,10 @@
       </a>
       <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" id="menuToggle"><span></span><span></span><span></span></button>
       <div class="navlinks" id="navlinks">
+        <a href="#work" class="nav-item">Selected Work</a>
         <a href="#studio" class="nav-item">Studio</a>
-        <a href="#engine" class="nav-item">The Engine</a>
-        <a href="#lab" class="nav-item">Cover Lab</a>
-        <a href="#services" class="nav-item">Services</a>
-        <a href="#work" class="nav-item">Work</a>
+        <a href="#process" class="nav-item">Process</a>
+        <a href="#services" class="nav-item">Engagements</a>
         <a href="#about" class="nav-item">About</a>
         <a href="#inquire" class="btn">Inquire <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
       </div>
@@ -148,7 +147,7 @@
         <p class="lede hero-lede">A boutique authority book studio for founders, consultants, coaches, and executives. We turn your expertise into a book people can trust: strategy, manuscript, design, and publishing under one editorial lead.</p>
         <div class="hero-cta">
           <a href="#inquire" class="btn">Apply to Work With the Studio <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-          <a href="#studio" class="link-arrow">Step inside the studio <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <a href="#work" class="link-arrow">See the work first <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
         </div>
         <div class="hero-mini">
           <div class="mi"><div class="v"><span class="count tnum" data-to="5">0</span><em>yrs</em></div><div class="l">In the studio</div></div>
@@ -157,49 +156,37 @@
         </div>
         <div class="scroll-cue"><span class="ln"></span><span>Scroll into the studio</span></div>
       </div>
-      <div class="hero-stage" aria-hidden="true">
-        <div class="platter"></div>
-        <svg class="stamp" viewBox="0 0 120 120" fill="none">
+      <div class="hero-stage">
+        <div class="platter" aria-hidden="true"></div>
+        <span class="hero-rule" aria-hidden="true"></span>
+        <svg class="stamp" viewBox="0 0 120 120" fill="none" aria-hidden="true">
           <defs><path id="circ" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs>
           <circle cx="60" cy="60" r="52" stroke="#b08d57" stroke-width="0.6" opacity="0.5"/>
           <circle cx="60" cy="60" r="44.5" stroke="#b08d57" stroke-width="0.6" opacity="0.5"/>
           <text fill="#b08d57" font-family="Inter,sans-serif" font-size="7" letter-spacing="3" font-weight="600"><textPath href="#circ" startOffset="0%">&#183; EDITORIAL CRAFT &#183; STRUCTURED AUTHORITY </textPath></text>
           <g transform="translate(60,60)" stroke="#b08d57" stroke-width="1" fill="none"><line x1="0" y1="-12" x2="0" y2="12"/><path d="M-7,-7 L7,7 M7,-7 L-7,7" opacity="0.4"/></g>
         </svg>
-        <div class="book-ground"></div>
-        <div class="book3d-wrap"><div class="book3d" id="heroBook">
-          <div class="book3d__panel book3d__spine"><span>Margin &amp; Spine</span></div>
+        <div class="book-ground" aria-hidden="true"></div>
+        <figure class="hero-page hp1">
+          <img src="assets/portfolio/hero-interior-leadership.webp" alt="Delivered interior page from a 25-book leadership publishing program" width="330" height="460" />
+          <figcaption>Delivered interior &middot; 25-book program</figcaption>
+        </figure>
+        <figure class="hero-page hp2">
+          <img src="assets/portfolio/hero-interior-truestory.webp" alt="Delivered chapter page from a ghostwritten true-story narrative" width="330" height="460" />
+          <figcaption>Delivered chapter &middot; true story</figcaption>
+        </figure>
+        <div class="book3d-wrap"><div class="book3d book3d--real" id="heroBook">
+          <div class="book3d__panel book3d__spine"><span>Produced at Margin &amp; Spine</span></div>
           <div class="book3d__panel book3d__pages"></div>
           <div class="book3d__panel book3d__top"></div>
-          <div class="book3d__panel book3d__front">
-            <svg class="bk-emblem" viewBox="0 0 24 24" fill="none" stroke="#d2b277" stroke-width="1"><rect x="2" y="2" width="20" height="20" rx="2"/><line x1="8" y1="3" x2="8" y2="21"/></svg>
-            <div class="bk-kicker">An Authority Book<br/>For Founders &amp; Experts</div>
-            <div class="bk-rule"></div>
-            <div class="bk-title">The <em class="bk-foil">Authority</em> Book</div>
-            <div class="bk-author">shaped at Margin &amp; Spine</div>
-          </div>
+          <div class="book3d__panel book3d__front" role="img" aria-label="Published client book produced by the studio: Fixing Your Food" style="background:url('assets/portfolio/hero-cover-health.webp') center/cover no-repeat"></div>
         </div></div>
-        <!-- floating production cards -->
-        <div class="float-card dark-card keep-mobile" style="top:2%;left:-2%;width:215px;--rot:-2deg;animation-delay:.4s">
-          <div class="fc-cap"><span>Manuscript tracker &middot; illustrative</span><span class="fc-live">In studio</span></div>
-          <div class="fc-bar" style="margin-bottom:.55rem"><i style="--p:74%"></i></div>
-          <div class="fc-row"><span class="k">Words this week</span><span class="v tnum">9,420</span></div>
-        </div>
-        <div class="float-card hero-prop" style="bottom:24%;left:-9%;width:232px;--rot:1.5deg;animation-delay:1.1s">
+        <div class="float-card keep-mobile" style="bottom:14%;left:-4%;width:238px;--rot:-1.5deg;animation-delay:.9s;z-index:7">
           <div class="fc-cap"><span>Verified client review</span><span style="color:var(--ok);font-weight:700">5 / 5</span></div>
           <div style="font-family:var(--serif);font-size:.88rem;line-height:1.45;color:var(--ink)">&#8220;His work was timely, well-structured, and resonated with our values.&#8221;</div>
           <div class="fc-row" style="margin-top:.5rem"><span class="k">Workplace initiative leader</span><span class="fc-badge"><svg class="ico" aria-hidden="true"><use href="#i-check-c"/></svg>Verbatim</span></div>
         </div>
-        <div class="float-card hero-prop" style="top:13%;right:-5%;width:196px;--rot:2deg;animation-delay:1.7s">
-          <div class="fc-cap"><span>Publishing checklist &middot; illustrative</span></div>
-          <div class="fc-row"><span class="k">Interior proof</span><span class="fc-badge"><svg class="ico"><use href="#i-check-c"/></svg>Approved</span></div>
-          <div class="fc-row"><span class="k">Cover foil pass</span><span class="fc-badge"><svg class="ico"><use href="#i-check-c"/></svg>Approved</span></div>
-          <div class="fc-row"><span class="k">Storefront listing</span><span class="fc-badge" style="color:var(--amber)"><svg class="ico"><use href="#i-clock"/></svg>Staging</span></div>
-        </div>
-        <div style="position:absolute;bottom:0;left:50%;transform:translateX(-50%);z-index:6;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--stone);font-weight:600;white-space:nowrap">70+ book projects &middot; 28 clients &middot; proof on record</div>
-        <div class="hero-prop" style="position:absolute;right:-2%;bottom:8%;z-index:7;transform:rotate(3deg)">
-          <div class="chapter-card"><div class="no">Chapter 03</div><div class="ti">The Operator&#8217;s Bias</div><div class="pr">Reader promise &middot; locked</div></div>
-        </div>
+        <div class="hero-proof">70+ book projects &middot; 28 clients &middot; proof on record<small>Cover shown as published. Client work, produced by the studio.</small></div>
       </div>
     </div>
   </div>
@@ -236,12 +223,49 @@
   </div></div>
 </section>
 
+<!-- ============ SELECTED WORK ============ -->
+<section class="reveal" id="work" aria-label="Selected work">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="num-row"><span class="idx">01</span><span class="line"></span><span class="eyebrow">Selected from the production record</span></div>
+      <h2 class="h1">The work comes first. <em class="serif-i">Here is ours.</em></h2>
+      <p class="lede">Five programs from a record of 70+ book projects for 28 clients. Client names are withheld or shown with permission, order details are redacted, and every count is confirmed against delivered files.</p>
+    </div>
+    <div class="cs-grid">
+      <figure class="cs-block reveal" style="--i:0">
+        <img src="assets/portfolio/case-study-health-book-production.webp" alt="Case study: four health and wellness books taken from manuscript to Amazon-ready files, with the published cover of one title" loading="lazy" width="1400" height="875" />
+        <figcaption><span><b>Full production</b> &middot; Health &amp; wellness publishing line</span><span>Final KDP files on record</span></figcaption>
+      </figure>
+      <figure class="cs-block reveal" style="--i:1">
+        <img src="assets/portfolio/case-study-leadership-series.webp" alt="Case study: a 25-book leadership publishing program for a U.S. training company, with an interior preface page" loading="lazy" width="1400" height="875" />
+        <figcaption><span><b>Series program</b> &middot; U.S. training company</span><span>25 books &middot; count confirmed by client</span></figcaption>
+      </figure>
+      <figure class="cs-block reveal" style="--i:2">
+        <img src="assets/portfolio/case-study-authority-trilogy.webp" alt="Case study: a three-book business authority trilogy with research-driven ghostwriting and custom editorial figures" loading="lazy" width="1400" height="875" />
+        <figcaption><span><b>Authority assets</b> &middot; Business growth strategist</span><span>Verified 5.0 review on the engagement</span></figcaption>
+      </figure>
+      <figure class="cs-block reveal" style="--i:3">
+        <img src="assets/portfolio/case-study-manuscript-rescue.webp" alt="Case study: manuscript rescue, from a raw first draft to a publication-ready book, showing the finished formatted chapter page" loading="lazy" width="1400" height="875" />
+        <figcaption><span><b>Manuscript rescue</b> &middot; First-time author</span><span>Before / after on file, shown with permission</span></figcaption>
+      </figure>
+      <figure class="cs-block reveal" style="--i:4">
+        <img src="assets/portfolio/case-study-truestory-narrative.webp" alt="Case study: a 31-chapter true-story narrative ghostwritten scene by scene, with a first-chapter page preview" loading="lazy" width="1400" height="875" />
+        <figcaption><span><b>Narrative nonfiction</b> &middot; Repeat client</span><span>Two books across five engagements</span></figcaption>
+      </figure>
+    </div>
+    <div style="margin-top:2.4rem;display:flex;align-items:center;gap:1.4rem;flex-wrap:wrap">
+      <a class="btn btn-ghost" href="assets/portfolio/margin-and-spine-master-portfolio.pdf" download>Download the Master Portfolio <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <span style="font-size:.78rem;color:var(--stone);font-style:italic">46 pages. Ten case studies, verbatim reviews, and redacted proof.</span>
+    </div>
+  </div>
+</section>
+
 <!-- ============ PRODUCTION COMMAND CENTER ============ -->
-<section class="dark coal command reveal" id="studio" aria-label="Live production command center">
+<section class="dark coal command reveal" id="studio" aria-label="Production record">
   <div class="glow brass cc1"></div><div class="glow green cc2"></div>
   <div class="wrap">
     <div class="section-head">
-      <div class="num-row"><span class="idx">01</span><span class="line"></span><span class="eyebrow">The production floor</span></div>
+      <div class="num-row"><span class="idx">02</span><span class="line"></span><span class="eyebrow">The production floor</span></div>
       <h2 class="h1">A production record, <em class="serif-i">not a promise.</em></h2>
       <p class="lede">Five years of tracked book production: strategy, manuscript, editing, design, publishing, launch. Below is a selection from the record. Client names are withheld or shown only with permission, and every count is confirmed against delivered files.</p>
     </div>
@@ -313,326 +337,31 @@
   </div>
 </section>
 
-<!-- ============ JOURNEY: IDEA → AUTHORITY ASSET ============ -->
-<section class="tone-paper reveal" id="process" aria-label="From idea to authority asset">
+<!-- ============ PROCESS (compact) ============ -->
+<section class="tone-paper reveal" id="process" aria-label="How a book is built">
   <div class="wrap">
     <div class="section-head">
-      <div class="num-row"><span class="idx">02</span><span class="line"></span><span class="eyebrow">The journey</span></div>
-      <h2 class="h1">From scattered ideas to a <em class="serif-i">publish-ready authority asset.</em></h2>
-      <p class="lede">Six production stages. Each one ends with something real you can hold, review, and approve. Stage visuals below are illustrative; client files stay confidential.</p>
+      <div class="num-row"><span class="idx">03</span><span class="line"></span><span class="eyebrow">The process</span></div>
+      <h2 class="h1">Six stages. <em class="serif-i">One accountable lead.</em></h2>
+      <p class="lede">From scattered ideas to a publish-ready authority asset. Each stage ends with something you can hold, review, and approve.</p>
     </div>
-    <div class="journey-rail" role="tablist" aria-label="Production stages">
-      <button class="j-tab" role="tab" aria-selected="true" aria-controls="jp1" id="jt1"><span class="jn">i</span> Strategy</button>
-      <button class="j-tab" role="tab" aria-selected="false" aria-controls="jp2" id="jt2"><span class="jn">ii</span> Writing</button>
-      <button class="j-tab" role="tab" aria-selected="false" aria-controls="jp3" id="jt3"><span class="jn">iii</span> Editing</button>
-      <button class="j-tab" role="tab" aria-selected="false" aria-controls="jp4" id="jt4"><span class="jn">iv</span> Design</button>
-      <button class="j-tab" role="tab" aria-selected="false" aria-controls="jp5" id="jt5"><span class="jn">v</span> Publishing</button>
-      <button class="j-tab" role="tab" aria-selected="false" aria-controls="jp6" id="jt6"><span class="jn">vi</span> Launch</button>
-    </div>
-    <div class="journey-stage">
-      <div class="j-panel active" id="jp1" role="tabpanel" aria-labelledby="jt1">
-        <div class="j-copy">
-          <div class="j-step">Stage i &middot; Weeks 1&ndash;4</div>
-          <h3>The book is <em>designed</em> before it is written.</h3>
-          <p>Positioning memo, thesis, reader definition, working title, and full chapter architecture. A manuscript is not enough. The book needs positioning, and it is set here, in writing, before a single chapter is drafted.</p>
-          <div class="j-deliv"><span class="chip">Positioning memo</span><span class="chip">Chapter architecture</span><span class="chip">Title direction</span></div>
-        </div>
-        <div class="j-visual">
-          <div class="j-meter">Production <span class="jm-bar"><i style="--p:16%"></i></span></div>
-          <div class="vig-notes" aria-hidden="true">
-            <div class="stick" style="top:4%;left:2%;--rot:-5deg">the framework nobody<br/>has named yet&hellip;</div>
-            <div class="stick" style="top:13%;right:6%;--rot:3deg">reader = operator,<br/>not spectator</div>
-            <div class="stick" style="bottom:18%;left:14%;--rot:2deg">ch. 3 &mdash; the bias<br/>under pressure</div>
-            <div class="stick" style="bottom:2%;right:14%;--rot:-3deg">working title:<br/><b>Under Load</b></div>
-            <svg style="position:absolute;left:34%;top:36%;width:90px;height:60px" viewBox="0 0 90 60" fill="none"><path d="M6,52 C28,40 38,18 84,8" stroke="#8a6a3c" stroke-width="1.4" stroke-dasharray="4 4"/><path d="M76,14 L84,8 L82,18" stroke="#8a6a3c" stroke-width="1.4" fill="none"/></svg>
-          </div>
-          <span class="tagline">Idea audit &rarr; thesis &rarr; architecture</span>
-        </div>
-      </div>
-      <div class="j-panel" id="jp2" role="tabpanel" aria-labelledby="jt2" hidden>
-        <div class="j-copy">
-          <div class="j-step">Stage ii &middot; Weeks 5&ndash;18</div>
-          <h3>Written in <em>your voice,</em> not ours.</h3>
-          <p>A structured interview series captures how you actually think and speak. Chapters are drafted against the locked architecture and delivered in clusters, so you watch the book take shape instead of receiving it cold at the end.</p>
-          <div class="j-deliv"><span class="chip">Interview series</span><span class="chip">Chapter clusters</span><span class="chip">Voice profile</span></div>
-        </div>
-        <div class="j-visual">
-          <div class="j-meter">Production <span class="jm-bar"><i style="--p:45%"></i></span></div>
-          <div class="vig-outline" aria-hidden="true">
-            <div class="vo-t"><span>Manuscript tracker</span><span>62,000 / 75,000 words</span></div>
-            <div class="vo-row"><span class="rn">04</span><span>The Operator&#8217;s Bias</span><span class="st">Drafted</span></div>
-            <div class="vo-row"><span class="rn">05</span><span>Signal Discipline</span><span class="st">Drafted</span></div>
-            <div class="vo-row"><span class="rn">06</span><span>Deciding Under Load</span><span class="st" style="color:var(--amber)">In progress</span></div>
-            <div class="vo-row"><span class="rn">07</span><span>The Cost of Consensus</span><span class="st" style="color:var(--stone-light)">Queued</span></div>
-            <div class="fc-bar" style="margin-top:1rem"><i style="--p:82%;width:82%"></i></div>
-          </div>
-          <span class="tagline">Interviews &rarr; drafts &rarr; clusters</span>
-        </div>
-      </div>
-      <div class="j-panel" id="jp3" role="tabpanel" aria-labelledby="jt3" hidden>
-        <div class="j-copy">
-          <div class="j-step">Stage iii &middot; Weeks 19&ndash;24</div>
-          <h3>Edited until the argument <em>holds.</em></h3>
-          <p>Developmental edit against the positioning memo, line edit against your voice profile, then proofread and continuity pass. Structural drift, weak transitions, and flattened voice are resolved here, not discovered by readers.</p>
-          <div class="j-deliv"><span class="chip">Developmental edit</span><span class="chip">Line edit</span><span class="chip">Style sheet</span></div>
-        </div>
-        <div class="j-visual">
-          <div class="j-meter">Production <span class="jm-bar"><i style="--p:66%"></i></span></div>
-          <div class="manuscript" style="max-width:330px" aria-hidden="true">
-            <div class="ms-page left">
-              <div class="ms-ch">Chapter Six</div>
-              <div class="ms-h">Deciding Under Load</div>
-              <div class="ms-lines">
-                <div class="ms-line" style="width:97%"></div><div class="ms-line" style="width:92%"></div>
-                <div class="ms-line struck" style="width:88%"></div><div class="ms-line" style="width:95%"></div>
-                <div class="ms-line" style="width:70%"></div><div class="ms-gap"></div>
-                <div class="ms-line" style="width:90%"></div><div class="ms-line" style="width:60%"></div>
-              </div>
-              <div class="ms-fol">114</div>
-            </div>
-            <div class="ms-page right">
-              <div class="ms-lines" style="margin-top:.4rem">
-                <div class="ms-line" style="width:94%"></div><div class="ms-line ins" style="width:99%"></div>
-                <div class="ms-line" style="width:86%"></div><div class="ms-line struck" style="width:78%"></div>
-                <div class="ms-line" style="width:93%"></div><div class="ms-gap"></div>
-                <div class="ms-line" style="width:99%"></div><div class="ms-line" style="width:54%"></div>
-              </div>
-              <span class="mk-circle" style="top:31%;left:24%;width:58px;height:16px"></span>
-              <span class="mk-note" style="top:11%;right:7%">voice</span>
-              <span class="mk-note" style="top:62%;right:7%">tighten</span>
-              <div class="ms-fol">115</div>
-            </div>
-          </div>
-          <span class="tagline">Structure &rarr; line &rarr; proof</span>
-        </div>
-      </div>
-      <div class="j-panel" id="jp4" role="tabpanel" aria-labelledby="jt4" hidden>
-        <div class="j-copy">
-          <div class="j-step">Stage iv &middot; Weeks 24&ndash;27</div>
-          <h3>Designed to sit beside <em>published authors,</em> not self-published neighbours.</h3>
-          <p>Cover direction, typography system, and full interior layout for print and eBook. A serious argument deserves a jacket that signals it. The cover lab below shows the range.</p>
-          <div class="j-deliv"><span class="chip">Cover design</span><span class="chip">Interior layout</span><span class="chip">Typography system</span></div>
-        </div>
-        <div class="j-visual">
-          <div class="j-meter">Production <span class="jm-bar"><i style="--p:82%"></i></span></div>
-          <div class="vig-cover-row" aria-hidden="true">
-            <div class="hardcover blank bk-ivory" style="--bw:96px"><div class="deboss"><svg class="m" viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="9" y1="4" x2="9" y2="20"/></svg></div></div>
-            <div class="hardcover bk-forest" style="--bw:120px"><div class="bk-kicker">Round 02</div><div class="bk-rule"></div><div class="bk-title">Under <em>Load</em></div><div class="bk-author">A. Reyes</div></div>
-            <div class="hardcover bk-coal" style="--bw:96px"><div class="bk-kicker">Round 03 &middot; foil</div><div class="bk-rule"></div><div class="bk-title">Under <em>Load</em></div></div>
-          </div>
-          <span class="tagline">Blank &rarr; rounds &rarr; foil pass</span>
-        </div>
-      </div>
-      <div class="j-panel" id="jp5" role="tabpanel" aria-labelledby="jt5" hidden>
-        <div class="j-copy">
-          <div class="j-step">Stage v &middot; Weeks 27&ndash;29</div>
-          <h3>Published <em>properly,</em> on the right route.</h3>
-          <p>Print and eBook publishing handled end to end: metadata, categories, pricing, storefront listing, and proof approval. Where the book warrants it, proposal materials for traditional and hybrid routes.</p>
-          <div class="j-deliv"><span class="chip">KDP setup &amp; metadata</span><span class="chip">Print proofs</span><span class="chip">Route strategy</span></div>
-        </div>
-        <div class="j-visual">
-          <div class="j-meter">Production <span class="jm-bar"><i style="--p:94%"></i></span></div>
-          <div class="vig-pub" aria-hidden="true">
-            <div class="pub-card"><span class="pc-ic"><svg class="ico"><use href="#i-print"/></svg></span><span><span class="pc-t">Print edition &middot; 6&times;9 hardback</span><span class="pc-s">Proof reviewed &middot; ink &amp; trim approved</span></span><span class="pc-st">Live</span></div>
-            <div class="pub-card"><span class="pc-ic" style="background:var(--charcoal)"><svg class="ico"><use href="#i-book"/></svg></span><span><span class="pc-t">eBook edition</span><span class="pc-s">Reflowable file validated across devices</span></span><span class="pc-st">Live</span></div>
-            <div class="pub-card"><span class="pc-ic" style="background:var(--brass-deep)"><svg class="ico"><use href="#i-doc"/></svg></span><span><span class="pc-t">Listing &amp; metadata</span><span class="pc-s">Categories, keywords, jacket copy</span></span><span class="pc-st" style="color:var(--amber)">Optimising</span></div>
-          </div>
-          <span class="tagline">Proof &rarr; approve &rarr; live</span>
-        </div>
-      </div>
-      <div class="j-panel" id="jp6" role="tabpanel" aria-labelledby="jt6" hidden>
-        <div class="j-copy">
-          <div class="j-step">Stage vi &middot; Ongoing</div>
-          <h3>The book starts <em>working for you.</em></h3>
-          <p>Launch sequence, author positioning materials, and a content ecosystem drawn from the manuscript: talks, articles, frameworks. The book stops being a project and becomes the spine of your authority.</p>
-          <div class="j-deliv"><span class="chip">Launch sequence</span><span class="chip">Author bio &amp; press kit</span><span class="chip">Content ecosystem</span></div>
-        </div>
-        <div class="j-visual">
-          <div class="j-meter">Production <span class="jm-bar"><i style="--p:100%"></i></span></div>
-          <div class="vig-launch" aria-hidden="true">
-            <svg viewBox="0 0 320 180" width="100%" role="img" aria-label="Authority growing after launch">
-              <line x1="24" y1="150" x2="304" y2="150" stroke="rgba(120,100,60,.3)" stroke-width="1"/>
-              <line x1="24" y1="150" x2="24" y2="14" stroke="rgba(120,100,60,.3)" stroke-width="1"/>
-              <path d="M24,144 C70,140 96,128 130,112 C168,94 200,70 240,48 C268,33 288,26 304,22 L304,150 L24,150 Z" fill="url(#areaGreen)"/>
-              <path class="crv" d="M24,144 C70,140 96,128 130,112 C168,94 200,70 240,48 C268,33 288,26 304,22" stroke="#1f3d2f" fill="none" stroke-width="2" style="stroke-dasharray:420;stroke-dashoffset:0"/>
-              <circle cx="130" cy="112" r="3.5" fill="#b08d57"/><circle cx="240" cy="48" r="3.5" fill="#b08d57"/>
-              <text x="118" y="100" font-size="8.5" fill="#6b6155" font-family="Inter,sans-serif" letter-spacing=".08em">LAUNCH</text>
-              <text x="216" y="38" font-size="8.5" fill="#6b6155" font-family="Inter,sans-serif" letter-spacing=".08em">SPEAKING &amp; LEADS</text>
-            </svg>
-          </div>
-          <span class="tagline">Asset &rarr; visibility &rarr; pipeline</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ AUTHORITY GROWTH ENGINE ============ -->
-<section class="reveal engine" id="engine" aria-label="Authority growth engine">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="num-row"><span class="idx">03</span><span class="line"></span><span class="eyebrow">The authority growth engine</span></div>
-      <h2 class="h1">A manuscript is not enough. <em class="serif-i">The book needs positioning.</em></h2>
-      <p class="lede">Built right, a book is not a publication. It is an engine that compounds trust, visibility, and inbound demand long after launch week.</p>
-    </div>
-    <div class="pgrid">
-      <div class="chartboard reveal" style="--i:1">
-        <div class="cb-head"><span class="t">Authority trajectory &middot; typical engagement</span><span class="d">indexed, months 0&ndash;18</span></div>
-        <svg class="growth-chart" viewBox="0 0 560 300" role="img" aria-label="Chart showing trust, visibility, and qualified leads compounding over 18 months after a book launch">
-          <line class="axis" x1="46" y1="254" x2="540" y2="254"/>
-          <line class="axis" x1="46" y1="254" x2="46" y2="20"/>
-          <line class="gridln" x1="46" y1="196" x2="540" y2="196"/><line class="gridln" x1="46" y1="138" x2="540" y2="138"/><line class="gridln" x1="46" y1="80" x2="540" y2="80"/>
-          <text x="46" y="272">M0</text><text x="170" y="272">M4 &middot; launch</text><text x="320" y="272">M10</text><text x="498" y="272">M18</text>
-          <text x="14" y="258">0</text><text x="8" y="84">High</text>
-          <line x1="186" y1="254" x2="186" y2="28" stroke="rgba(176,141,87,.45)" stroke-width="1" stroke-dasharray="3 5"/>
-          <path class="fillarea" d="M46,246 C110,240 150,226 186,206 C240,176 300,128 380,92 C440,66 500,48 540,40 L540,254 L46,254 Z" fill="url(#areaGreen)"/>
-          <path class="crv c1" d="M46,246 C110,240 150,226 186,206 C240,176 300,128 380,92 C440,66 500,48 540,40" stroke="#1f3d2f"/>
-          <path class="crv c2" d="M46,248 C110,246 150,238 186,222 C250,196 320,164 400,140 C460,122 510,112 540,108" stroke="#b08d57"/>
-          <path class="crv c3" d="M46,250 C120,250 160,246 186,238 C260,220 330,200 410,180 C470,166 515,158 540,154" stroke="#a59c8c" stroke-dasharray="5 6"/>
-          <circle class="pt" cx="186" cy="206" r="4" fill="#1f3d2f"/>
-          <circle class="pt" cx="380" cy="92" r="4" fill="#1f3d2f"/>
-          <circle class="pt" cx="540" cy="40" r="4" fill="#b08d57"/>
-        </svg>
-        <div class="chart-flag f1" style="left:26%;top:56%">Book launches</div>
-        <div class="chart-flag f2" style="left:56%;top:24%">Speaking invitations</div>
-        <div class="chart-flag f3" style="right:4%;top:8%">Inbound &middot; compounding</div>
-        <div class="legend">
-          <span class="lg"><i style="background:#1f3d2f"></i> Trust &amp; authority</span>
-          <span class="lg"><i style="background:#b08d57"></i> Visibility</span>
-          <span class="lg"><i style="background:#a59c8c"></i> Qualified leads</span>
-        </div>
-        <p style="margin:.9rem 0 0;font-size:.72rem;color:var(--stone-light);font-style:italic">Illustrative model of how a well-positioned book compounds. Not measured client data.</p>
-      </div>
-      <div class="reveal" style="--i:2">
-        <div class="orbit" aria-label="What a published book feeds: speaking, consulting, leads, press, products, clients">
-          <div class="ring"></div><div class="ring r2"></div>
-          <div class="orbit-core"><div class="hardcover bk-forest" style="aspect-ratio:auto"><div class="bk-kicker">Your</div><div class="bk-rule"></div><div class="bk-title">Authority <em>Asset</em></div></div></div>
-          <div class="orbit-sat" style="left:50%;top:1%"><span class="os-ic"><svg class="ico"><use href="#i-mic"/></svg></span><span class="os-l">Speaking</span></div>
-          <div class="orbit-sat" style="left:95%;top:30%"><span class="os-ic"><svg class="ico"><use href="#i-users"/></svg></span><span class="os-l">Consulting</span></div>
-          <div class="orbit-sat" style="left:88%;top:79%"><span class="os-ic"><svg class="ico"><use href="#i-trend"/></svg></span><span class="os-l">Lead flow</span></div>
-          <div class="orbit-sat" style="left:50%;top:97%"><span class="os-ic"><svg class="ico"><use href="#i-press"/></svg></span><span class="os-l">Press &amp; media</span></div>
-          <div class="orbit-sat" style="left:12%;top:79%"><span class="os-ic"><svg class="ico"><use href="#i-cart"/></svg></span><span class="os-l">Digital products</span></div>
-          <div class="orbit-sat" style="left:5%;top:30%"><span class="os-ic"><svg class="ico"><use href="#i-target"/></svg></span><span class="os-l">Client acquisition</span></div>
-        </div>
-        <div class="engine-rows">
-          <div class="engine-row"><svg class="ico"><use href="#i-check-c"/></svg><span><b>Trust before the first call.</b> Prospects arrive pre-sold by 200 pages of your thinking.</span></div>
-          <div class="engine-row"><svg class="ico"><use href="#i-check-c"/></svg><span><b>A named method.</b> Your framework stops being &#8220;our approach&#8221; and becomes citable IP.</span></div>
-          <div class="engine-row"><svg class="ico"><use href="#i-check-c"/></svg><span><b>An asset, not a campaign.</b> Ads stop when budgets stop. A book keeps introducing you.</span></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ BEFORE / AFTER TRANSFORMATION ============ -->
-<section class="tone-warm edge-t edge-b reveal" id="transform" aria-label="Manuscript transformation, before and after">
-  <div class="wrap">
-    <div class="transform-head">
-      <div class="section-head" style="margin-bottom:0">
-        <div class="num-row"><span class="idx">04</span><span class="line"></span><span class="eyebrow">Proof of craft</span></div>
-        <h2 class="h1">What we&#8217;re handed. <em class="serif-i">What we hand back.</em></h2>
-        <p class="lede">Most authors arrive with years of thinking and no book: voice memos, decks, half-drafts, 200,000 stray words. This is the transformation, honestly shown.</p>
-      </div>
-      <div class="ba-toggle" role="group" aria-label="Toggle before and after view">
-        <button id="baBefore" aria-pressed="false">What arrives</button>
-        <button id="baAfter" aria-pressed="true">What ships</button>
-      </div>
-    </div>
-    <div class="ba-stage show-after" id="baStage">
-      <div class="ba-side ba-before reveal" style="--i:0">
-        <span class="ba-tag">Before &middot; the raw material</span>
-        <div class="scrawl">
-          <span class="sc-t">&#8220;chapter ideas (v7, final-FINAL)&#8221;</span>
-          <div class="sc-line" style="width:88%;--rot:-.4deg"></div>
-          <div class="sc-line cut" style="width:94%"></div>
-          <div class="sc-line" style="width:72%;--rot:.5deg"></div>
-          <div class="sc-line" style="width:90%"></div>
-          <div class="sc-line cut" style="width:64%;--rot:-.6deg"></div>
-          <div class="sc-line" style="width:81%"></div>
-          <span class="sc-note" style="top:34%;right:2%">where does this go??</span>
-          <span class="sc-note" style="top:64%;left:4%;--rot:2deg">repeats ch.1</span>
-          <span class="sc-q" style="top:48%;right:14%">?</span>
-        </div>
-        <ul class="ba-list">
-          <li><svg class="ico"><use href="#i-x"/></svg><span>Three competing theses, none named</span></li>
-          <li><svg class="ico"><use href="#i-x"/></svg><span>Strong stories buried in 200k unstructured words</span></li>
-          <li><svg class="ico"><use href="#i-x"/></svg><span>No reader defined: written at everyone, lands with no one</span></li>
-          <li><svg class="ico"><use href="#i-x"/></svg><span>Voice flattened by earlier editors</span></li>
-        </ul>
-      </div>
-      <div class="ba-mid" aria-hidden="true"><span class="arr"><svg class="ico"><use href="#i-arrow"/></svg></span></div>
-      <div class="ba-side ba-after reveal" style="--i:1">
-        <span class="ba-tag">After &middot; the authority asset</span>
-        <div class="ms-ch">Chapter One</div>
-        <div class="ms-h" style="font-size:1.5rem">The Operator&#8217;s Bias</div>
-        <div class="ms-lines" aria-hidden="true">
-          <div class="ms-line" style="width:96%"></div><div class="ms-line" style="width:99%"></div>
-          <div class="ms-line" style="width:93%"></div><div class="ms-line" style="width:97%"></div>
-          <div class="ms-line" style="width:64%"></div>
-        </div>
-        <ul class="ba-list">
-          <li><svg class="ico"><use href="#i-check-c"/></svg><span>One ownable thesis, defended across 12 chapters</span></li>
-          <li><svg class="ico"><use href="#i-check-c"/></svg><span>Chapter architecture with a promise to the reader in every chapter</span></li>
-          <li><svg class="ico"><use href="#i-check-c"/></svg><span>The author&#8217;s cadence preserved, line by line</span></li>
-          <li><svg class="ico"><use href="#i-check-c"/></svg><span>Print-ready interior, jacket, and publishing route</span></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ COVER PAGE LAB ============ -->
-<section class="dark forest booklab reveal" id="lab" aria-label="Cover design lab">
-  <div class="glow brass bl1"></div><div class="glow green bl2"></div>
-  <div class="wrap">
-    <div class="section-head">
-      <div class="num-row"><span class="idx">05</span><span class="line"></span><span class="eyebrow">The cover lab</span></div>
-      <h2 class="h1">Jackets built to signal <em class="serif-i">authority on a shelf.</em></h2>
-      <p class="lede">Cover treatments developed in the studio across categories: foil, deboss, restrained typography. Design that says <em>published author</em>, not template.</p>
-    </div>
-    <div class="lab-grid">
-      <div>
-        <div class="cover-grid">
-          <div class="cover-card reveal" style="--i:0"><div class="hardcover bk-forest"><div class="bk-kicker">A Framework For<br/>Early-Stage Operators</div><div class="bk-rule"></div><div class="bk-title">Decisions <em>Under</em> Pressure</div><div class="bk-author">A. Reyes</div></div><div class="cover-meta"><span class="cat">Founder &middot; Methodology</span><span class="ttl">Decisions Under Pressure</span></div></div>
-          <div class="cover-card reveal" style="--i:1"><div class="hardcover bk-ivory"><div class="bk-kicker">Emotional Regulation<br/>For High-Pressure Work</div><div class="bk-rule"></div><div class="bk-title">Hold <em>the Line</em></div><div class="bk-author">Dr. M. Levine</div></div><div class="cover-meta"><span class="cat">Therapist &middot; Self-help</span><span class="ttl">Hold the Line</span></div></div>
-          <div class="cover-card reveal" style="--i:2"><div class="hardcover bk-coal"><div class="bk-kicker">A Memoir On Leadership<br/>&amp; Later Years</div><div class="bk-rule"></div><div class="bk-title">After <em>the Office</em></div><div class="bk-author">J. Whitfield</div></div><div class="cover-meta"><span class="cat">Executive &middot; Memoir</span><span class="ttl">After the Office</span></div></div>
-          <div class="cover-card reveal" style="--i:3"><div class="hardcover bk-deep"><div class="bk-kicker">A Named Method For<br/>Executive Coaches</div><div class="bk-rule"></div><div class="bk-title">Mid-Career <em>Inflection</em></div><div class="bk-author">S. Okafor</div></div><div class="cover-meta"><span class="cat">Consultant &middot; Framework</span><span class="ttl">Mid-Career Inflection</span></div></div>
-        </div>
-        <div style="margin-top:clamp(3rem,6vw,4.5rem)">
-          <div style="text-align:center;font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:var(--brass-light);font-weight:600;margin-bottom:2rem">Across the categories we work in</div>
-          <div class="shelf">
-            <div class="spine-bk" style="height:200px;background:linear-gradient(90deg,#11241b,#1f3d2f 45%,#11241b)"><span class="t" style="color:#e7d2a3">Business</span></div>
-            <div class="spine-bk" style="height:228px;background:linear-gradient(90deg,#120e07,#211c15 45%,#120e07)"><span class="t" style="color:#d2b277">Leadership</span></div>
-            <div class="spine-bk" style="height:184px;background:linear-gradient(90deg,#d9cdb0,#ece2cd 45%,#d9cdb0)"><span class="t" style="color:#1f3d2f">Self-help</span></div>
-            <div class="spine-bk" style="height:214px;background:linear-gradient(90deg,#8a6a3c,#caa566 45%,#8a6a3c)"><span class="t" style="color:#1a160f">Coaching</span></div>
-            <div class="spine-bk" style="height:196px;background:linear-gradient(90deg,#1c3a2c,#2a5340 45%,#1c3a2c)"><span class="t" style="color:#e7d2a3">Memoir</span></div>
-            <div class="spine-bk" style="height:222px;background:linear-gradient(90deg,#d6c9aa,#e8ddc4 45%,#d6c9aa)"><span class="t" style="color:#8a6a3c">Contemplative</span></div>
-          </div>
-          <div class="shelf-line"></div>
-          <div class="shelf-shadow"></div>
-        </div>
-      </div>
-      <aside class="lab-notes reveal" style="--i:2" aria-label="Production notes">
-        <div class="ln-cap"><span>Production notes</span><span class="d">cover round 02</span></div>
-        <div class="swatches">
-          <div class="swatch"><i style="background:linear-gradient(150deg,#2a5340,#14291f)"></i><span>Forest cloth</span></div>
-          <div class="swatch"><i style="background:linear-gradient(150deg,#e9d6a8,#9c7b44)"></i><span>Brass foil</span></div>
-          <div class="swatch"><i style="background:linear-gradient(150deg,#fdfbf6,#e3d8be)"></i><span>Ivory board</span></div>
-          <div class="swatch"><i style="background:linear-gradient(150deg,#2c261d,#120e07)"></i><span>Charcoal</span></div>
-        </div>
-        <div class="specimen">
-          <div class="sp-big">Aa <em>Aa</em> &mdash; 09</div>
-          <div class="sp-meta">Display serif &middot; optical 144pt &middot; foil-stamp weight tested</div>
-        </div>
-        <div class="lab-checks">
-          <div class="lc"><svg class="ico"><use href="#i-check"/></svg><span>Spine legible at shelf distance</span><span class="st">Pass</span></div>
-          <div class="lc"><svg class="ico"><use href="#i-check"/></svg><span>Thumbnail holds at 80px storefront size</span><span class="st">Pass</span></div>
-          <div class="lc"><svg class="ico"><use href="#i-check"/></svg><span>Print &amp; eBook trims aligned</span><span class="st">Pass</span></div>
-          <div class="lc"><svg class="ico"><use href="#i-check"/></svg><span>Category convention honoured, not copied</span><span class="st">Pass</span></div>
-        </div>
+    <div class="pgrid-process">
+      <ol class="pmap">
+        <li class="pstep reveal" style="--i:0"><span class="pn">i</span><div><h3>Strategy</h3><p>Positioning memo, thesis, reader, and a locked chapter architecture. The book is designed before it is written.</p></div></li>
+        <li class="pstep reveal" style="--i:1"><span class="pn">ii</span><div><h3>Writing</h3><p>A structured interview series captures your voice. Chapters are drafted in clusters against the architecture, not dumped at the end.</p></div></li>
+        <li class="pstep reveal" style="--i:2"><span class="pn">iii</span><div><h3>Editing</h3><p>Developmental and line editing until the argument holds. Every chapter is checked against the memo and your voice profile.</p></div></li>
+        <li class="pstep reveal" style="--i:3"><span class="pn">iv</span><div><h3>Design</h3><p>Cover and interior typography built to signal published author, not template.</p></div></li>
+        <li class="pstep reveal" style="--i:4"><span class="pn">v</span><div><h3>Publishing</h3><p>Metadata, categories, proofs, and storefront setup, decided rather than improvised.</p></div></li>
+        <li class="pstep reveal" style="--i:5"><span class="pn">vi</span><div><h3>Launch</h3><p>Author positioning materials drawn from the manuscript, so the book starts working for your business.</p></div></li>
+      </ol>
+      <aside class="pproof reveal" style="--i:2">
+        <figure>
+          <img src="assets/portfolio/process-delivered-page.webp" alt="A delivered, professionally formatted chapter page from a manuscript rescue engagement" loading="lazy" width="330" height="460" />
+          <figcaption><b>Delivered page</b> &middot; manuscript rescue, shown with the author&#8217;s permission</figcaption>
+        </figure>
+        <p class="pnote">Process visuals elsewhere on this site are illustrative. Pages like this one are the actual deliverable.</p>
       </aside>
     </div>
-    <p style="margin-top:2.4rem;font-size:.82rem;color:rgba(245,239,227,.55);font-style:italic;position:relative;z-index:2">Editorial direction samples developed in the studio. Real published covers replace these as projects clear confidentiality.</p>
   </div>
 </section>
 
@@ -640,7 +369,7 @@
 <section class="reveal" id="services" aria-label="Services">
   <div class="wrap">
     <div class="section-head">
-      <div class="num-row"><span class="idx">06</span><span class="line"></span><span class="eyebrow">Engagements</span></div>
+      <div class="num-row"><span class="idx">04</span><span class="line"></span><span class="eyebrow">Engagements</span></div>
       <h2 class="h1">Four ways in. <em class="serif-i">One standard.</em></h2>
       <p class="lede">Built for experts who need authority, not just pages. Every engagement runs under one editorial lead, and every price below is a starting point, confirmed after a conversation.</p>
     </div>
@@ -670,83 +399,11 @@
   </div>
 </section>
 
-<!-- ============ TWO WAYS IN ============ -->
-<section class="tone-warm edge-t edge-b reveal" id="fit" aria-label="Who the studio is for">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="num-row"><span class="idx">07</span><span class="line"></span><span class="eyebrow">Fit</span></div>
-      <h2 class="h1">Built for a specific kind of author.</h2>
-      <p class="lede">A small slate only works if it is the right slate. Read this before you inquire; it will save us both a call.</p>
-    </div>
-    <div class="entry-grid">
-      <div class="entry-card feature reveal" style="--i:0">
-        <div class="entry-tag">A fit for the studio</div>
-        <h3>Bring a real method.</h3>
-        <ul class="fit-list fit-yes">
-          <li><svg class="ico" aria-hidden="true"><use href="#i-check-c"/></svg><span>Founders and operators codifying a proven methodology</span></li>
-          <li><svg class="ico" aria-hidden="true"><use href="#i-check-c"/></svg><span>Consultants and coaches with a framework worth naming in print</span></li>
-          <li><svg class="ico" aria-hidden="true"><use href="#i-check-c"/></svg><span>Clinicians and psychologists writing serious self-help</span></li>
-          <li><svg class="ico" aria-hidden="true"><use href="#i-check-c"/></svg><span>Executives writing memoir with a method inside it</span></li>
-          <li><svg class="ico" aria-hidden="true"><use href="#i-check-c"/></svg><span>Experts with real standing and the patience for a deliberate process</span></li>
-        </ul>
-      </div>
-      <div class="entry-card reveal" style="--i:1">
-        <div class="entry-tag">Not a fit</div>
-        <h3>We will say no, politely.</h3>
-        <ul class="fit-list fit-no">
-          <li><svg class="ico" aria-hidden="true"><use href="#i-x"/></svg><span>Fiction, poetry, and children&#8217;s books</span></li>
-          <li><svg class="ico" aria-hidden="true"><use href="#i-x"/></svg><span>Books expected in days or weeks rather than months</span></li>
-          <li><svg class="ico" aria-hidden="true"><use href="#i-x"/></svg><span>Invented expertise, invented credentials, or claims we cannot stand behind</span></li>
-          <li><svg class="ico" aria-hidden="true"><use href="#i-x"/></svg><span>Guaranteed-bestseller requests. Nobody can promise that honestly.</span></li>
-          <li><svg class="ico" aria-hidden="true"><use href="#i-x"/></svg><span>Cheapest-option shopping and volume book farms</span></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ SELECTED WORK ============ -->
-<section class="reveal" id="work" aria-label="Selected work">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="num-row"><span class="idx">08</span><span class="line"></span><span class="eyebrow">Selected case studies</span></div>
-      <h2 class="h1">Real engagements, <em class="serif-i">shown honestly.</em></h2>
-      <p class="lede">Five programs from a record of 70+ book projects for 28 clients. Client names are withheld or shown with permission, order details are redacted, and every count is confirmed against delivered files.</p>
-    </div>
-    <div class="cs-grid">
-      <figure class="cs-block reveal" style="--i:0">
-        <img src="assets/portfolio/case-study-health-book-production.webp" alt="Case study: four health and wellness books taken from manuscript to Amazon-ready files, with the published cover of one title" loading="lazy" width="1400" height="875" />
-        <figcaption><span><b>Full production</b> &middot; Health &amp; wellness publishing line</span><span>Final KDP files on record</span></figcaption>
-      </figure>
-      <figure class="cs-block reveal" style="--i:1">
-        <img src="assets/portfolio/case-study-leadership-series.webp" alt="Case study: a 25-book leadership publishing program for a U.S. training company, with an interior preface page" loading="lazy" width="1400" height="875" />
-        <figcaption><span><b>Series program</b> &middot; U.S. training company</span><span>25 books &middot; count confirmed by client</span></figcaption>
-      </figure>
-      <figure class="cs-block reveal" style="--i:2">
-        <img src="assets/portfolio/case-study-authority-trilogy.webp" alt="Case study: a three-book business authority trilogy with research-driven ghostwriting and custom editorial figures" loading="lazy" width="1400" height="875" />
-        <figcaption><span><b>Authority assets</b> &middot; Business growth strategist</span><span>Verified 5.0 review on the engagement</span></figcaption>
-      </figure>
-      <figure class="cs-block reveal" style="--i:3">
-        <img src="assets/portfolio/case-study-manuscript-rescue.webp" alt="Case study: manuscript rescue, from a raw first draft to a publication-ready book, showing the finished formatted chapter page" loading="lazy" width="1400" height="875" />
-        <figcaption><span><b>Manuscript rescue</b> &middot; First-time author</span><span>Before / after on file, shown with permission</span></figcaption>
-      </figure>
-      <figure class="cs-block reveal" style="--i:4">
-        <img src="assets/portfolio/case-study-truestory-narrative.webp" alt="Case study: a 31-chapter true-story narrative ghostwritten scene by scene, with a first-chapter page preview" loading="lazy" width="1400" height="875" />
-        <figcaption><span><b>Narrative nonfiction</b> &middot; Repeat client</span><span>Two books across five engagements</span></figcaption>
-      </figure>
-    </div>
-    <div style="margin-top:2.4rem;display:flex;align-items:center;gap:1.4rem;flex-wrap:wrap">
-      <a class="btn btn-ghost" href="assets/portfolio/margin-and-spine-master-portfolio.pdf" download>Download the Master Portfolio <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-      <span style="font-size:.78rem;color:var(--stone);font-style:italic">46 pages. Ten case studies, verbatim reviews, and redacted proof.</span>
-    </div>
-  </div>
-</section>
-
 <!-- ============ TESTIMONIALS ============ -->
 <section class="tone-warm edge-t edge-b reveal" aria-label="Testimonials">
   <div class="wrap">
     <div class="section-head">
-      <div class="num-row"><span class="idx">09</span><span class="line"></span><span class="eyebrow">In their words</span></div>
+      <div class="num-row"><span class="idx">05</span><span class="line"></span><span class="eyebrow">In their words</span></div>
       <h2 class="h1">Verbatim, from the record.</h2>
       <p class="lede">Real client reviews, quoted exactly as written. Ratings are shown as given, including the ones that are not a round five.</p>
     </div>
@@ -778,7 +435,7 @@
 <section class="spotlight reveal" id="about" aria-label="About the founder">
   <div class="glow green"></div>
   <div class="wrap">
-    <div class="section-head"><div class="num-row"><span class="idx">10</span><span class="line"></span><span class="eyebrow">Founder note</span></div></div>
+    <div class="section-head"><div class="num-row"><span class="idx">06</span><span class="line"></span><span class="eyebrow">Founder note</span></div></div>
     <div class="spot-grid">
       <div>
         <div class="portrait-frame">
@@ -823,6 +480,41 @@
   </div>
 </section>
 
+<!-- ============ TWO WAYS IN ============ -->
+<section class="tone-warm edge-t edge-b reveal" id="fit" aria-label="Who the studio is for">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="num-row"><span class="idx">07</span><span class="line"></span><span class="eyebrow">Fit</span></div>
+      <h2 class="h1">Built for a specific kind of author.</h2>
+      <p class="lede">A small slate only works if it is the right slate. Read this before you inquire; it will save us both a call.</p>
+    </div>
+    <div class="entry-grid">
+      <div class="entry-card feature reveal" style="--i:0">
+        <div class="entry-tag">A fit for the studio</div>
+        <h3>Bring a real method.</h3>
+        <ul class="fit-list fit-yes">
+          <li><svg class="ico" aria-hidden="true"><use href="#i-check-c"/></svg><span>Founders and operators codifying a proven methodology</span></li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-check-c"/></svg><span>Consultants and coaches with a framework worth naming in print</span></li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-check-c"/></svg><span>Clinicians and psychologists writing serious self-help</span></li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-check-c"/></svg><span>Executives writing memoir with a method inside it</span></li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-check-c"/></svg><span>Experts with real standing and the patience for a deliberate process</span></li>
+        </ul>
+      </div>
+      <div class="entry-card reveal" style="--i:1">
+        <div class="entry-tag">Not a fit</div>
+        <h3>We will say no, politely.</h3>
+        <ul class="fit-list fit-no">
+          <li><svg class="ico" aria-hidden="true"><use href="#i-x"/></svg><span>Fiction, poetry, and children&#8217;s books</span></li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-x"/></svg><span>Books expected in days or weeks rather than months</span></li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-x"/></svg><span>Invented expertise, invented credentials, or claims we cannot stand behind</span></li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-x"/></svg><span>Guaranteed-bestseller requests. Nobody can promise that honestly.</span></li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-x"/></svg><span>Cheapest-option shopping and volume book farms</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ============ FINAL CTA ============ -->
 <section class="dark coal final-cta reveal" aria-label="Apply to work with the studio">
   <div class="glow brass c1"></div>
@@ -844,7 +536,7 @@
 <section class="tone-paper reveal" id="inquire" aria-label="Inquiry form">
   <div class="wrap">
     <div class="section-head">
-      <div class="num-row"><span class="idx">11</span><span class="line"></span><span class="eyebrow">Begin</span></div>
+      <div class="num-row"><span class="idx">08</span><span class="line"></span><span class="eyebrow">Begin</span></div>
       <h2 class="h1">Tell us what you are <em class="serif-i">building.</em></h2>
       <p class="lede">A short note is enough. Every inquiry is read personally, as a project to consider rather than a lead to convert.</p>
     </div>
@@ -911,7 +603,7 @@
       <p>A boutique production studio shaping the ideas of founders, coaches, consultants, and experts into authority books. Strategy, manuscript, design, and publishing under one roof.</p>
       <div class="badges"><span class="b">5 Years</span><span class="b">70+ Book Projects</span><span class="b">28 Clients</span><span class="b">US &middot; UK &middot; CA &middot; AU</span></div>
     </div>
-    <div class="col"><h4>Studio</h4><a href="#studio">Production floor</a><a href="#engine">The growth engine</a><a href="#lab">Cover lab</a><a href="#services">Services</a><a href="#work">Selected work</a><a href="#about">About</a></div>
+    <div class="col"><h4>Studio</h4><a href="#work">Selected work</a><a href="#studio">Production record</a><a href="#process">Process</a><a href="#services">Engagements</a><a href="#about">About</a></div>
     <div class="col"><h4>Begin</h4><a href="#inquire">Inquire</a><a href="mailto:ubaidcontentsolution@gmail.com"><svg class="ico" style="width:15px;height:15px" aria-hidden="true"><use href="#i-mail"/></svg> ubaidcontentsolution@gmail.com</a></div>
   </div>
   <div class="foot-rule"></div>
