@@ -2,8 +2,8 @@
    MARGIN & SPINE - main.js
    Lightweight vanilla JS, no libraries.
    Handles: header/scroll progress, scrollspy nav, mobile menu,
-   scroll reveals, animated counters, hero book tilt, studio clock,
-   live activity feed, journey tabs, before/after toggle, inquiry form.
+   scroll reveals, animated counters, hero book tilt,
+   journey tabs, before/after toggle, inquiry form.
    ===================================================================== */
 
 (function(){
@@ -87,49 +87,6 @@
       book.style.transform = 'rotateX(' + (7 - dy*9) + 'deg) rotateY(' + (-30 + dx*14) + 'deg)';
     });
     stage.addEventListener('pointerleave', function(){ book.style.transform = 'rotateX(7deg) rotateY(-30deg)'; });
-  }
-
-  /* ---- studio clock ---- */
-  var clock = document.getElementById('studioClock');
-  function tickClock(){
-    var d = new Date();
-    clock.textContent = String(d.getHours()).padStart(2,'0') + ':' + String(d.getMinutes()).padStart(2,'0') + ':' + String(d.getSeconds()).padStart(2,'0');
-  }
-  if(clock){ tickClock(); setInterval(tickClock, 1000); }
-
-  /* ---- live studio activity feed ---- */
-  var feedList = document.getElementById('feedList');
-  var feedPool = [
-    { i:'i-pen',    t:'<b>Ch. 11 draft</b> sent for author review', m:'founder methodology' },
-    { i:'i-edit',   t:'<b>Line edit</b> pass completed on Ch. 6–8', m:'clinical self-help' },
-    { i:'i-type',   t:'<b>Cover round 2</b> staged in the lab', m:'foil + deboss variants' },
-    { i:'i-doc',    t:'<b>Positioning memo</b> approved by author', m:'executive memoir' },
-    { i:'i-mic',    t:'<b>Interview session 5</b> transcribed &amp; coded', m:'voice profile updated' },
-    { i:'i-print',  t:'<b>Print proof</b> approved — ink &amp; trim pass', m:'consulting framework' },
-    { i:'i-send',   t:'<b>Storefront listing</b> live in 14 markets', m:'print + eBook' },
-    { i:'i-trend',  t:'<b>Reader reviews</b> crossed 4.8 average', m:'launch + 9 weeks' },
-    { i:'i-layers', t:'<b>Chapter architecture</b> locked at 12 chapters', m:'reader promises set' },
-    { i:'i-check-c',t:'<b>Style sheet</b> finalised — terminology pass', m:'manuscript handover' }
-  ];
-  function fmtAgo(n){ return n === 0 ? 'now' : n + 'm ago'; }
-  function renderFeed(){
-    if(!feedList) return;
-    feedList.innerHTML = '';
-    var ago = 0;
-    for(var k = 0; k < 4; k++){
-      var item = feedPool[(feedSeed + k) % feedPool.length];
-      var row = document.createElement('div');
-      row.className = 'feed-item';
-      row.style.animationDelay = (k * .12) + 's';
-      row.innerHTML = '<svg class="ico" aria-hidden="true"><use href="#' + item.i + '"/></svg><span>' + item.t + '<br><span style="font-size:.64rem;color:rgba(245,239,227,.4)">' + item.m + '</span></span><span class="tm">' + fmtAgo(ago) + '</span>';
-      feedList.appendChild(row);
-      ago += [3,9,14][k] || 21;
-    }
-  }
-  var feedSeed = 0;
-  if(feedList){
-    renderFeed();
-    if(!reduceMotion) setInterval(function(){ feedSeed = (feedSeed + 1) % feedPool.length; renderFeed(); }, 6000);
   }
 
   /* ---- journey tabs ---- */

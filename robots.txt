@@ -2,5 +2,5 @@
 User-agent: *
 Allow: /
 
-# TODO: replace with your real domain
-Sitemap: https://www.YOURDOMAIN.com/sitemap.xml
+# Sitemap on GitHub Pages (update when custom domain goes live)
+Sitemap: https://ubaidmunir71.github.io/margin-and-spine-website/sitemap.xml

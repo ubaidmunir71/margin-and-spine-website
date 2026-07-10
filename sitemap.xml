@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- TODO: replace YOURDOMAIN.com with your real domain, then submit
-     this file's URL in Google Search Console after launch. -->
+<!-- GitHub Pages URL; update when the custom domain goes live, then submit in Search Console. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.YOURDOMAIN.com/</loc>
+    <loc>https://ubaidmunir71.github.io/margin-and-spine-website/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>

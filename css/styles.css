@@ -592,3 +592,16 @@ footer.site .col a:hover{ color:var(--brass-light); transform:translateX(3px); }
   .float-card.keep-mobile{ display:block; }
   .stamp{ width:78px; height:78px; }
 }
+/* ============ 25 · CASE STUDIES + FIT (portfolio proof) ============ */
+.cs-grid{ display:grid; grid-template-columns:1fr; gap:1.8rem; }
+@media(min-width:900px){ .cs-grid{ grid-template-columns:repeat(2,1fr); } .cs-grid .cs-block:first-child{ grid-column:1 / -1; } }
+.cs-block{ margin:0; border-radius:8px; overflow:hidden; border:1px solid var(--rule); background:var(--charcoal); box-shadow:var(--shadow-lift); transition:transform .45s var(--ease),box-shadow .45s; }
+.cs-block:hover{ transform:translateY(-5px); box-shadow:var(--shadow-book); }
+.cs-block img{ width:100%; height:auto; display:block; }
+.cs-block figcaption{ padding:.85rem 1.15rem; font-size:.74rem; letter-spacing:.04em; color:var(--stone); background:var(--paper); border-top:1px solid var(--rule-soft); display:flex; justify-content:space-between; align-items:baseline; gap:1rem; flex-wrap:wrap; }
+.cs-block figcaption b{ color:var(--ink); text-transform:uppercase; font-size:.6rem; letter-spacing:.16em; }
+.fit-list{ list-style:none; margin:1.1rem 0 0; padding:0; display:grid; gap:.75rem; }
+.fit-list li{ display:grid; grid-template-columns:22px 1fr; gap:.75rem; font-size:.94rem; color:var(--ink-soft); line-height:1.55; }
+.fit-list .ico{ width:16px; height:16px; margin-top:.26rem; }
+.fit-yes .ico{ color:var(--ok); }
+.fit-no .ico{ color:#9c4a3c; }
